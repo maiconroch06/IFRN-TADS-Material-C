@@ -1,3 +1,3 @@
 # Hello!, wolrd!
 
-Este repositorio aonde irei colocar meus projetos desenvolvidos ao longo da minha jornada na faculdade. Logo em breve irei trazer atualizações
+This repository is where I will place my projects developed throughout my journey in college. Soon, I will bring more.
