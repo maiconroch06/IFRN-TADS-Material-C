@@ -19,11 +19,13 @@ int main (void) {
     printf("Informe sua nota3: ");
     scanf("%f",&nota3);
 
-    media_ponderada =  ((nota1 * 2) + (nota2 * 3) (nota3 * 5)) / 10;
+    media_ponderada =  ((nota1 * 2) + (nota2 * 3) + (nota3 * 5)) / 10;
 
     if (media_ponderada)
     {
-        printf("Aprovado")
+        printf("Aprovado");
+    } else {
+        printf("Reprovado");
     }
     
 
