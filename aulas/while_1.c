@@ -5,17 +5,11 @@
 #include <stdio.h>
 
 int main (void) {
-    int de,ate;
-
-    printf("De um numero: ");
-    scanf("%i",&de);
-    printf("Ate o numero: ");
-    scanf("%i",&ate);
-
+    int cont = 0;
         //    !=
-    while (de < ate)
+    while (cont < 100)
     {
-        printf("\n %i. PROGRAMACAO DE COMPUTADORES!", ++de);
+        printf("\n %i. PROGRAMACAO DE COMPUTADORES!", ++cont);
     }
 
     printf("\n\n #Final do programa");
