@@ -5,12 +5,16 @@ int main (void) {
 
 	printf("\n- > Informe a velocidade media percorrida (KM/H): ");
 	scanf("%f", &v);
+
 	printf("- > Informe o tempo estimado para viagem (H): ");
 	scanf("%f", &t);
+
 	printf("- > Informe o preco do alcool (R$/L): ");
 	scanf("%f", &pa);
+
 	printf("- > Informe o preco da gasolina (R$/L): ");
 	scanf("%f", &pg);
+	
 	printf("- > Informe o rendimento do carro usando gasolina (R$/L): ");
 	scanf("%f", &rg);
 	

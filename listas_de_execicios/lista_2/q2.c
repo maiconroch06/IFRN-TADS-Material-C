@@ -5,8 +5,10 @@ int main (void) {
 
     printf(" -> Informe Lado 1: ");
     scanf("%f",&l1);
+
     printf("\n -> Informe Lado 2: ");
     scanf("%f",&l2);
+    
     printf("\n -> Informe Lado 3: ");
     scanf("%f",&l3);
 

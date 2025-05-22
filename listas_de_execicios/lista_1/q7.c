@@ -8,12 +8,13 @@ int main (void) {
 
 	printf(" - Informe a largura da parede (m): ");
 	scanf("%f",  &x);
+
 	printf(" - Informe a altura da parede (m): ");
 	scanf("%f",  &y);
 
-     area_parede = x * y;
-     tinta_usada = area_parede * 0.3;
-     quant_latas = tinta_usada / 2;
+    area_parede = x * y;
+    tinta_usada = area_parede * 0.3;
+    quant_latas = tinta_usada / 2;
 
 	printf("\nVoce ira usar %.0f latas de tinta", ceil(quant_latas));
 

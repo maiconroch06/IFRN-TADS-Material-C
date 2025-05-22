@@ -10,6 +10,7 @@ int main(void) {
 
     if (idade >= 18) {
         printf("\n -> Voce e maior de idade <-");
+        
     } else {
         printf("\n -> Voce e menor de idade <-");
     }

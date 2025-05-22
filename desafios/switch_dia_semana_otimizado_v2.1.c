@@ -20,19 +20,20 @@ int main (void) {
 
         default:
 
-//    switch (dia) {
-//
-//        case 1:
-//        case 7:
-//            printf(" Final de semana!");
-//            break;
-//        case 2:
-//        case 3:
-//        case 4:
-//        case 5:
-//        case 6:
-//            printf(" Meio de semana!");
-//            break;
+/*  switch (dia) {
+
+        case 1:
+        case 7:
+            printf(" Final de semana!");
+            break;
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+            printf(" Meio de semana!");
+            break;
+*/
 
             printf(" #ERRO: o numero adicionado nao representa algum dia da semana!");
             break;

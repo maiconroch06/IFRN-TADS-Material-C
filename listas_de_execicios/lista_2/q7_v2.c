@@ -10,8 +10,10 @@ int main (void) {
     char sexo;
 
     printf(" - - - Saiba seu peso ideal - - -");
+    
     printf("\n -> Informe seu sexo (M/F): ");
     scanf("%c",&sexo);
+
     printf(" -> Informe sua altura (m): ");
     scanf("%f",&altura);
 

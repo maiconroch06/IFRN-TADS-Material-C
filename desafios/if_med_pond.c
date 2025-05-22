@@ -14,20 +14,22 @@ int main (void) {
 
     printf("Informe sua nota1: ");
     scanf("%f",&nota1);
+
     printf("Informe sua nota2: ");
     scanf("%f",&nota2);
+
     printf("Informe sua nota3: ");
     scanf("%f",&nota3);
 
     media_ponderada =  ((nota1 * 2) + (nota2 * 3) + (nota3 * 5)) / 10;
 
-    if (media_ponderada)
-    {
+    if (media_ponderada) {
         printf("Aprovado");
+
     } else {
         printf("Reprovado");
+        
     }
-    
 
     return 0;
 }

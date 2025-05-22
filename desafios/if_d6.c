@@ -18,12 +18,13 @@ int main(void) {
 
     if (media >= 7.0) {
         printf("\n   - APROVADO -");
+
     } else if (media <= 4) {
         printf("\n   - REPROVADO -");
+
     } else {
         printf("\n  - PROVA FINAL -");
     }
-    
     
     printf("\n -> MEDIA: %.2lf <-", media);
 

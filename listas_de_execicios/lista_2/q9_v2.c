@@ -10,11 +10,14 @@ int main (void) {
 	
     if (a == 0) {
         printf(" - - - Nao eh raiz! - - -");
+
     } else if (a != 0 ) {  
         printf(" -> Informe o valor de b: ");
 	    scanf("%f",&b);
+
 	    printf(" -> Informe o valor de c: ");
 	    scanf("%f",&c);
+        
         dt = (pow(b,2) - 4*a*c);
 
     } else if (dt < 0) {

@@ -7,12 +7,16 @@ int main (void) {
 
 	printf(" - Cedulas de R$1: ");
 	scanf("%i" , &r1);
+
 	printf(" - Cedulas de R$5: ");
 	scanf("%i", &r5);
+
 	printf(" - Cedulas de R$10: ");
 	scanf("%i", &r10);
+
 	printf(" - Cedulas de R$50: ");
 	scanf("%i", &r50);
+	
 	printf(" - Cedulas de R$100: ");
 	scanf("%i", &r100);
 

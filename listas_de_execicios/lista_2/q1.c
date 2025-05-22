@@ -4,8 +4,10 @@ int main (void) {
     float num1,num2;
 
     printf(" - - - Comparar dois numeros - - -");
+    
     printf("\n\n Numero 1: ");
     scanf("%f",&num1);
+
     printf("\n Numero 2: ");
     scanf("%f",&num2);
 

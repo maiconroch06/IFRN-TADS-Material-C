@@ -14,13 +14,18 @@ int main(void) {
     float x,y,xp,yp,sl,ps,n_ps;
 
     printf("\n     Dimensoes da Sala");
+    
     printf("\n Digite p valor de x (cm): ");
     scanf("%f", &x);
+
     printf(" Digite p valor de y (cm): ");
     scanf("%f", &y);
+
     printf("\n     Dimicoes do Piso");
+
     printf("\n Digite p valor de xp (cm): ");
     scanf("%f", &xp);
+
     printf("\n Digite p valor de yp (cm): ");
     scanf("%f", &yp);
 

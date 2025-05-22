@@ -13,6 +13,7 @@ int main (void) {
 
     } else if (salario >= 600 && salario <= 1200) {
         sal_desc = (salario * 0.2) + salario;
+
         printf("\n - Seu salario: R$%.2f", salario);
         printf("\n - Valor do desconto: R$%.2f", sal_desc - salario);
         printf("\n - Desconto de 20%%");
@@ -20,6 +21,7 @@ int main (void) {
 
     } else if (salario > 1200 && salario <= 2000) {
         sal_desc = (salario * 0.25) + salario;
+
         printf("\n - Seu salario: R$%.2f", salario);
         printf("\n - Valor do desconto: R$%.2f", sal_desc - salario);
         printf("\n - Desconto de 25%%");
@@ -27,6 +29,7 @@ int main (void) {
 
     } else if (salario > 2000) {
         sal_desc = (salario * 0.30) + salario;
+        
         printf("\n - Seu salario: R$%.2f", salario);
         printf("\n - Valor do desconto: R$%.2f", sal_desc - salario);
         printf("\n - Desconto de 30%%");

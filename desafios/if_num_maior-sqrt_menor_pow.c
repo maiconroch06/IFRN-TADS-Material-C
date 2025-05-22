@@ -1,5 +1,4 @@
-//1. Criar um programa que deixe entrar com dois números e imprimir o quadrado do menor 
-//número e a raiz quadrada do maior número, se for possível.
+/* Criar um programa que deixe entrar com dois números e imprimir o quadrado do menor número e a raiz quadrada do maior número, se for possível. */
 
 #include <stdio.h>
 #include <math.h>
@@ -19,6 +18,7 @@ int main (void) {
     } else if (n2 < n1) { 
         printf("\n -> A raiz quadrada do maior numero eh: %.2f", sqrt(n1));
         printf("\n -> O quadrado do menor numero eh: %.2f", pow(n2,2));
+
     } else {
         printf(" #ERRO: os numeros sao iguais");
     }

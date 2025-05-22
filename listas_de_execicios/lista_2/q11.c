@@ -5,8 +5,10 @@ int main (void) {
 
     printf(" -> Qual o municipio: ");
     scanf("%c",&municipio);
+
     printf("\n -> Quantidade de eleitores aptos: ");
     scanf("%i",&eleitores_aptos);
+    
     printf("\n -> Numero de votos: ");
     scanf("%i",&votos);
 

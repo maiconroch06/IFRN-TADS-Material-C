@@ -5,8 +5,10 @@ int main(void) {
 
 	printf("Informe quantidades de camisetas pequenas: ");
 	scanf("%i", &p);
+
 	printf("Informe quantidades de camisetas medias: ");
 	scanf("%i", &m);
+	
 	printf("Informe quantidades de camisetas grandes: ");
 	scanf("%i", &g);
 

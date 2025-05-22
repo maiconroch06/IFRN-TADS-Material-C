@@ -5,8 +5,9 @@ int main (void) {
 
     
     printf("- - - Veja se voce pode votar - - - ");
+
     printf("\n -> Informe sua idade: ");
-    scanf("%",&idade);
+    scanf("%i",&idade);
 
     if (idade > 0 && idade < 16) {
         printf("- - - Nao eh eleitor - - -");

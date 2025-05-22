@@ -11,8 +11,10 @@ int main(void) {
 
     printf("\n Informe a: ");
     scanf("%f", &a);
+
     printf("\n Informe b: ");
     scanf("%f", &b);
+    
     printf("\n Informe c: ");
     scanf("%f", &c);
     

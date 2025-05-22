@@ -14,8 +14,10 @@ int main (void) {
 
     printf("Informe a sua nota1: ");
     scanf("%f",&nota1);
+
     printf("Informe a sua nota2: ");
     scanf("%f",&nota2);
+    
     printf("Informe a sua nota3: ");
     scanf("%f",&nota3);
 
@@ -39,6 +41,7 @@ int main (void) {
         if (media_final >= 60) {
             printf("Sua media final: %.2f\n",media_final);
             printf("PARABENS!!! Voce foi aprovado!");
+            
         } else {
             printf("Sua media final: %.2f\n",media_final);
             printf("Sinto muito! Tente novamente!");
