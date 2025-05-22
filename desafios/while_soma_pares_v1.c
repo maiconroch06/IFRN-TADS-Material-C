@@ -8,7 +8,6 @@ int main (void) {
     while (n <= 50) {
         if (n % 2 == 0) {
             somatorio = somatorio + n;    
-            
         }
         n = n + 1;
     }

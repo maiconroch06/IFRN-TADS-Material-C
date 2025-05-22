@@ -2,24 +2,27 @@
 #include <math.h>
 
 int main(void) {
-    float x,f;
+    float x;
 
     printf("\n<--------------------- EQUACIONE --------------------->\n");
+    printf("\n      f(x) = ((5 * x) + 3) / (sqrt(x * x - 16))\n");
 
-    printf("\n      f(x) = ((5 * x) + 3) / (sqrt(pow(x,2) - 16))\n\n");
+    printf("\n<--------------------- INFORME (X) -------------------->\n\n");
+    printf(" -> x: ");
+    scanf("%f", &x);
 
-    printf(" Informe o valor de x (float): ");
-    scanf("%f",&x);
-
-    f = ((5 * x) + 3) / (sqrt(pow(x,2) - 16));
-
-    if (x <= 4) {
-        printf("\n #ERRO: x deve ser maior do que 4!");
+    if (x < -4 || x > 4) {
+        float f = ((5 * x) + 3) / sqrt(x * x - 16);
+        printf("\n______________________ RESPOSTA ______________________\n");
+        printf("\n                    f(%.2f) = %.2f", x, f);
+    } else if (x == -4 || x == 4) {
+        printf("\n_______________________ #ERRO! _______________________\n");
+        printf("\n x = %.2f causa divisao por zero!", x);
     } else {
-        printf("\n -> f(%.2f) = %2.f",x,f);
+        printf("\n_______________________ #ERRO! _______________________\n");
+        printf("\n x = %.2f causa raiz de numero negativo!", x);
     }
 
-    printf("\n\n_____________________________________________\n");
-
+    printf("\n______________________________________________________\n");
     return 0;
 }
