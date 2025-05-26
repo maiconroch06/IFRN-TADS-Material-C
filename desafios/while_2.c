@@ -12,7 +12,7 @@ int main (void) {
     int somatorio_alt_F = 0;
     int cont_F = 0;
 
-    printf(" -> Genero (H ou M): ");
+    printf(" -> Genero (M ou F): ");
     scanf("%c",genero);
     fflush(stdin);
 
@@ -32,7 +32,7 @@ int main (void) {
         fflush(stdin);
 
         printf(" -> Genero (M ou F): ");
-        scanf("%c",genero);
+        scanf("%c",&genero);
 
         printf(" -> Altura: ");
         scanf("%i",&altura);
