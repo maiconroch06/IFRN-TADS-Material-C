@@ -6,13 +6,13 @@ int main(void) {
 
     printf(" _______________ Calendario xx/xx/xx _______________\n\n");
 
-    printf(" -> Infome o 'DIA' da sua data: ");
+    printf(" -> Infome o 'DIA': ");
     scanf("%i",&dia);
 
-    printf(" -> Infome o 'MES' da sua data: ");
+    printf(" -> Infome o 'MES': ");
     scanf("%i",&mes);
 
-    printf(" -> Infome o 'ANO' da sua data: ");
+    printf(" -> Infome o 'ANO': ");
     scanf("%i",&ano);
 
 
@@ -35,11 +35,11 @@ int main(void) {
         printf("\n - DATA VALIDA, ANO BISSEXTO!!! ");
         printf(" %i / %i / %i",dia,mes,ano);
 
-
-    } else if (dia > 0 && dia <= 28 && mes == 2 && ano < 0) {
+/*
+    } else if (dia > 0 && dia <= 31 && mes > 0 && mes <= 12 && ano < 0) {
         printf("\n - DATA VALIDA, ANO(S) ANTES DE CRISTO!!! ");
         printf(" %i / %i / %i",dia,mes,ano);
-    
+*/    
 
     } else {
         printf("\n - DATA INVALIDA!!!");

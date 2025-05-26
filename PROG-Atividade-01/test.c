@@ -2,7 +2,7 @@
 #include <string.h>
 
 int main(void) {
-/*
+
     char nome1,nome2,nome3;
     int tempo1,tempo2,tempo3;
     int minutos1,minutos2,minutos3;
@@ -12,7 +12,7 @@ int main(void) {
     tempo1 = 100 * minutos1 + 10 * segundos1 + centesimos1;
     tempo2 = 100 * minutos2 + 10 * segundos2 + centesimos2;
     tempo3 = 100 * minutos3 + 10 * segundos3 + centesimos3;
-*/
+
     char at1[30],aux;//at2[30],at3[30];
     char tempo1[100];//tempo2,tempo3;
     int minutos,segundos,centesimos;
