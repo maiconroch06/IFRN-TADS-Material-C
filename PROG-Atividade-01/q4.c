@@ -15,21 +15,6 @@ int main(void) {
     printf("Infome o ano: ");
     scanf("%i",&ano);
 
-    /*
-     Eh data
-    Para ser dia
-    dia > 0 && dia <= 30 nos meses 4 6 9 e 11
-    dia > 0 && dia <= 31 nos meses 1 3 5 7 8 10 12
-
-    dia > 0 && dia <= 28 no mese 2, se dia for 29 sera ano bissexto
-
-    Para ser mes == 1,2,3,4,5,6,7,8,9,10,11,12
-    
-    Para ser ano bissexto = ano > 0 && mes == 2 && dia == 29
-    Para ser ano comum = ano > 0 && mes == 2 && dia != 29
-
-    */
-
     if (dia > 0 && dia <= 30 && mes == 4 || mes == 6 || mes == 9 || mes == 11) {
         printf("Data - valida");
         printf(" %i / %i / %i",dia,mes,ano);
