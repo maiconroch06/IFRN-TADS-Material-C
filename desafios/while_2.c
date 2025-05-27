@@ -13,7 +13,7 @@ int main (void) {
     int cont_F = 0;
 
     printf(" -> Genero (M ou F): ");
-    scanf("%c",genero);
+    scanf("%c",&genero);
     fflush(stdin);
 
     printf(" -> Altura (cm): ");
