@@ -10,7 +10,7 @@ int main (void) {
             n = n + 2;
         }
         n = n + 1;
-    printf("\nSomatorio: %i\n\n",somatorio);
+    printf("\nSomatorio: %i",somatorio);
 
     return 0;
 }
