@@ -21,8 +21,12 @@ int main(void) {
             dosagem = 500;
         } else if (peso_corporio > 30) {
             dosagem = 750;
+        } else if (peso_corporio > 0 && peso_corporio < 5) {
+            printf(" #ERRO: peso fora do escopo!");
+        } else if (peso_corporio == 0) {
+            printf(" #ERRO: peso igual a 0!");            
         } else {
-            printf(" ERRO peso negativo");
+            printf(" #ERRO: peso negativo!");
         }
 
     } else if (idade >= 12) {
@@ -31,15 +35,18 @@ int main(void) {
         } else if (peso_corporio > 0 && peso_corporio < 60) {
             dosagem = 875;
         } else {
-            printf(" ERRO peso negativo");
+            printf(" #ERRO: peso negativo!");
         }
         
     } else {
-        printf(" ERRO idade negativa");
+        printf(" #ERRO: idade negativa!");
     }
-    
-    
 
-    printf(" Quantidade de gotas: %i",dosagem);
+    gotas = (dosagem / 500.0) * 20;
+
+    printf("\n Dosagem: %d mg", dosagem);
+    printf("\n Quantidade de gotas: %d\n", gotas);
+
+
     return 0;
 }
