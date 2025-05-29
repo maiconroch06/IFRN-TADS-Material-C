@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main () {
+int main (void) {
     int prato,sobremesa,bebida,cal = 0;
 
     printf("\n-------------- PRATO PRINCIPAL --------------\n");
@@ -17,8 +17,7 @@ int main () {
         case 2: cal += 230; break;
         case 3: cal += 250; break;
         case 4: cal += 350; break;
-        default: break;
-        }
+        default: break; }
 
     printf("\n---------------- SOBREMESA ------------------\n");
     printf(" 1 - Abacaxi            |  75 cal\n");
@@ -34,8 +33,7 @@ int main () {
         case 2: cal += 110; break;
         case 3: cal += 170; break;
         case 4: cal += 200; break;
-        default: break;
-    }
+        default: break; }
 
     printf("\n----------------- BEBIDA --------------------\n");
     printf(" 1 - Chá                |  30 cal\n");
@@ -51,8 +49,7 @@ int main () {
         case 2: cal += 70; break;
         case 3: cal += 100; break;
         case 4: cal += 65; break;
-        default: break;
-    }
+        default: break; }
 
     printf("\n=====================================================\n");
     printf("\n               Calorias total: %i\n",cal);

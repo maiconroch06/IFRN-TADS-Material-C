@@ -28,7 +28,7 @@ int main(void) {
                 printf("\n Data valida: %i / %i / %i a.C.\n", dia, mes, ano);
 
             } else if ((mes == 2) && (dia == 29) && ((ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0))) {
-                printf("\n Data valida: %i / %i / %i (a.C. bissexto)\n", dia, mes, ano);
+                printf("\n Data valida: %i / %i / %i a.C. (ano bissexto)\n", dia, mes, ano);
 
             } else {
                 printf("\n Data invalida para o ano a.C.\n");
