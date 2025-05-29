@@ -6,7 +6,7 @@ int main(void){
     int tempo[3];
     
     char aux;
-    #define AUXILAR fflush(stdin); scanf("%c",&aux);
+    #define AUX fflush(stdin); scanf("%c",&aux);
 
     printf(" ============================================\n");
     printf("           COMPETETICAO DE NATACAO!\n");
@@ -18,7 +18,7 @@ int main(void){
         //De preferencia adicionar nomes com tamanhos iguais*
         printf("  >>> %i. Competidor: ",i + 1);
         scanf("%[^\n]",atletas[i]);
-        AUXILIAR;
+        AUX;
         
         printf(" ======== Tempo do(a) Competidor(a) %i =======\n",i + 1);
         printf("  -> Minutos: ");
@@ -34,7 +34,7 @@ int main(void){
         AUX;
 
         //Converte minutos e segundos em centesimos
-        tempo[i] = min[i] * 600 + seg[i] * 100 + cent[i];
+        tempo[i] = min[i] * 6000 + seg[i] * 100 + cent[i];
 
     }
     
