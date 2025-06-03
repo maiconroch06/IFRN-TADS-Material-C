@@ -20,20 +20,15 @@ int main(void) {
             case 2: valor_compra += 10 ; break;
             case 3: valor_compra += 6  ; break;
             case 4: valor_compra += 3.5; break;
-            case 0: ; break;
+            case 0: break;
             default: printf("\n #ERRO: opcao invalida!"); break; }
 
     
-        if (op > 0) {
-            printf(" * Valo da conta: R$%f.2", valor_compra);
+        if (valor_compra > 0) {
+            printf(" * Valo da conta: R$%.2f", valor_compra);
         }
 
     } while (op != 0);
-
-
-    
-    
-    
 
     return 0;
 }
