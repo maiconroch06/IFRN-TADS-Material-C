@@ -2,14 +2,15 @@
 
 int main(void) {
 
-    for (int i = 1; i >= j; i--) {
-        for (int j = 100; j >= 40; j--) {
-            if (i % 7 == 0) {
-                printf("%i: %i\n",j,i);    
-            }
+/*
+    int cont = 1;
+
+    for (int i = 100; i >= 40; i--) {
+        if (i % 7 == 0) {
+            printf("%i: eh divisivel por %i\n",cont,i);
+            cont++;
         }
-        
-            
     }
+*/
     return 0;
 }
