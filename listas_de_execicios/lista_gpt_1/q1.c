@@ -47,5 +47,5 @@ int main () {
 Leia uma temperatura em Celsius e converta para Fahrenheit.
 
 
-Crie um vetor de 5 inteiros, leia os valores e exiba a soma total.
+
 */

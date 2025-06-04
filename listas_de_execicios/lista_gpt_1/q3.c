@@ -1,4 +1,4 @@
-//Calcule a média de três notas e diga se o aluno está aprovado (média ≥ 7)
+//Calcule a média de três notas e diga se o aluno está aprovado (média ≥ 7).
 #include <stdio.h>
 
 #define N_NOTAS 2
