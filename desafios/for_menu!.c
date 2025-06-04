@@ -28,9 +28,9 @@ int main(void) {
 
     } while (op != 0);
 
-        if (valor_compra > 0) {
-            printf(" * Valo da conta: R$%.2f", valor_compra);
-        }
-        
+    if (valor_compra > 0) {
+        printf(" * Valo da conta: R$%.2f", valor_compra);
+    }
+
     return 0;
 }
