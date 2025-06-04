@@ -24,11 +24,13 @@ int main(void) {
             default: printf("\n #ERRO: opcao invalida!"); break; }
 
     
-        if (valor_compra > 0) {
-            printf(" * Valo da conta: R$%.2f", valor_compra);
-        }
+
 
     } while (op != 0);
 
+        if (valor_compra > 0) {
+            printf(" * Valo da conta: R$%.2f", valor_compra);
+        }
+        
     return 0;
 }
