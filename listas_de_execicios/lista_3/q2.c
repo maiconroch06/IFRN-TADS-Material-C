@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main (void) {
-    int num, n;
+    int num;
     int maior_num = 0;
     int menor_num = 99999;
     int cont = 0;
