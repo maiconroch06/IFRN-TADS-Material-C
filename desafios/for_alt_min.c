@@ -16,7 +16,7 @@ int main(void) {
 
         if (altura < 160) n_menores_160++;
 
-        if (i == 0) {       // dps disso pode eliminar o inicializador das alturas max e min.
+        if (i == 0) { // dps disso pode eliminar o inicializador das alturas max e min.
             alt_max = alt_min = altura; 
         } else if (altura < alt_min) {
             alt_min = altura;
