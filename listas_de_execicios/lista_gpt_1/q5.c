@@ -1,16 +1,21 @@
-//Conte e imprima quantos números entre 1 e 100 são divisíveis por 3.
+//Crie um vetor de 5 inteiros, leia os valores e exiba a soma total.
 #include <stdio.h>
 
-int main (void) {
-    int contador = 0;
+int main () {
+    int num[4];
+    int som = 0;
 
-    for (int i = 1; i <= 100; i++) {    
-        if (i % 3 == 0) { 
-            printf("%i. %i\n",contador,i);
-            contador++;     
-    }}
-    
-    printf("Total de numeros divisiveis por 3: %d\n", contador);
-    
+    for (int i = 0; i <= 4; i++) {
+        printf(" Informe o numero %i: ",i + 1);
+        scanf("%i",&num[i]);
+        som += num[i];
+    }
+
+    printf("\n => RESULTADO:");
+    for (int i = 0; i < 4; i++) {
+        printf(" %i +",num[i]);
+    }
+    printf(" %i = %i",num[4],som);
+
     return 0;
 }

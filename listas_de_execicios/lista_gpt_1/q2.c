@@ -1,11 +1,34 @@
-//Imprima todos os números pares de 1 a 200.
 #include <stdio.h>
+//Leia um número e diga se ele é par ou ímpar.
+int main () {
+    int num;
+    int op;
 
-int main (void) {
-    for (int i = 1; i <= 200; i++) {
-        printf("%i\n",i);
+    do {
+    //entradad de valores
+    printf("\n ----------------- IMPAR OU PAR? -----------------\n");    
+    printf(" -> Numero: ");
+    scanf("%i",&num);
+
+    //comparação e exibição
+    if (num % 2 == 0) {
+        printf(" => Eh par!");
+    }else if (num % 2 != 0) {
+        printf(" => Eh impar!");
+    } else {                        
+        printf(" # ERRO: valor invalido!");
     }
     
+    printf("\n\n");
+    printf(" * Digite [0] para continuar: ");
+    scanf("%i",&op);
+
+    printf("\n--------------------------------------------------\n");
+    } while (op == 0);
+
+    if (op == 0) {
+    printf("                                   * Saindo...");
+    }
 
     return 0;
 }
