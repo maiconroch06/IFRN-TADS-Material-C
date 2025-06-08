@@ -13,7 +13,7 @@ int main (void) {
       float termo = 1.0 / i;
       E += termo;
 
-      printf(" (1/ %i)", i);
+      printf("(1/%i)", i);
       if (i < N) {
          printf(" + ");
       }
