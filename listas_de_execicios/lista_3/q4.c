@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 int main (void) {
    int termo0 = 0;
    int termo1 = 1;
