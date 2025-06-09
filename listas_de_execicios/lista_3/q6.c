@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main (void) {
-   int N;
    float E = 0;
+   int N;
 
    printf(" Informe um numero: ");
    scanf("%i", &N);
