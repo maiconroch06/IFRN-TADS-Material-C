@@ -2,8 +2,7 @@
 
 int main(void) {
 
-        for (int i = 2; i <= 120; i++) {
-
+        for (int i = 1; i <= 120; i++) {
             int quantidade_divisores = 0;
 
             for (int j = 1; j <= 120; j++) {
@@ -11,7 +10,6 @@ int main(void) {
                     quantidade_divisores++;
                 }
             }
-            
             if (quantidade_divisores == 2) {
                 printf(" %i", i);
             }
