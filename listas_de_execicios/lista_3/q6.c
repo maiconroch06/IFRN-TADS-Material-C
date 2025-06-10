@@ -1,25 +1,29 @@
 #include <stdio.h>
 
 int main (void) {
-   int N;
    float E = 0;
+   int N;
 
    printf(" Informe um numero: ");
    scanf("%i", &N);
 
    printf(" E = ");
 
-   for (int i = 1; i <= N; i++) {
-      float termo = 1.0 / i;
-      E += termo;
+   if (N > 0) {
+   
+      for (int i = 1; i <= N; i++) { 
+         E += 1.0 / i;
 
-      printf("(1/%i)", i);
-      if (i < N) {
-         printf(" + ");
+         printf("(1/%i)", i);
+         if (i < N) {
+            printf(" + ");
+         }
       }
-   }
+      printf(" = %.2f", E);
 
-   printf(" = %f", E);
+   } else {
+      printf("\n # ERRO: valor de N deve ser positivo!");
+   }
 
    return 0;
 }

@@ -7,11 +7,7 @@ int main (void) {
     scanf("%i",&num);
 
     for (int i = 1; i <= num; i++) {
-        
-        if (i % 5 != 0) {
-            printf(" %i\n",i * i);
-        }
-    
+        printf(" %i\n",i * i);
     }
     
     return 0;
