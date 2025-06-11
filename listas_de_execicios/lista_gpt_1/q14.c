@@ -1,7 +1,5 @@
-//Desenhe um triângulo de asteriscos com base de n linhas.
-
 #include <stdio.h>
-
+//Desenhe um triângulo de asteriscos com base de n linhas.
 int main() {
     int n;
     printf("Digite o numero de linhas: ");

@@ -1,17 +1,17 @@
-//Escreva um programa que leia dois números inteiros e exiba o maior deles.
 #include <stdio.h>
-
+//Escreva um programa que leia dois números inteiros e exiba o maior deles.
 int main () {
-    int num[1];
+    int num[2];
     int op;
 
     do {
-    //entradad de valores
+    //inicio
     printf("\n ------------ COMPARE DOIS NUMEROS ------------\n");    
-    printf(" -> Numero 1: ");
-    scanf("%i",&num[0]);
-    printf(" -> Numero 2: ");
-    scanf("%i",&num[1]);
+    //entrada de valores
+    for (int i = 0; i <= 1; i++) {
+        printf(" -> Numero %i: ", i + 1);
+        scanf("%i",&num[i]);
+    }
 
     //comparação e exibição
     if (num[0] > num[1]) {
@@ -31,21 +31,7 @@ int main () {
     printf("\n-----------------------------------------------\n");
     } while (op == 0);
 
-    if (op == 0) {
     printf("                                   * Saindo...");
-    }
 
     return 0;
 }
-
-
-
-
-
-/*
-
-Leia uma temperatura em Celsius e converta para Fahrenheit.
-
-
-
-*/

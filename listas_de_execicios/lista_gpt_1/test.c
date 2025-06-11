@@ -1,7 +1,5 @@
-//Leia n e calcule o fatorial de n.
-
 #include <stdio.h>
-
+//Leia n e calcule o fatorial de n.
 int main() {
     int n,fatorial;
     printf("Digite o numero: ");

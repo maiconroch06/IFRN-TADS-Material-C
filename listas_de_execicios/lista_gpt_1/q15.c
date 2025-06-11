@@ -1,7 +1,5 @@
-//Verifique se um número é primo (sem usar break).
-
 #include <stdio.h>
-
+//Verifique se um número é primo (sem usar break).
 int main() {
     int num;
 

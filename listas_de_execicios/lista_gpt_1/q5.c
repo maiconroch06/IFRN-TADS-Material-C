@@ -1,6 +1,5 @@
-//Crie um vetor de 5 inteiros, leia os valores e exiba a soma total.
 #include <stdio.h>
-
+//Crie um vetor de 5 inteiros, leia os valores e exiba a soma total.
 int main () {
     int num[4];
     int som = 0;
