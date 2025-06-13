@@ -1,6 +1,5 @@
-//Calcule a média de três notas e diga se o aluno está aprovado (média ≥ 7).
 #include <stdio.h>
-
+//Calcule a média de três notas e diga se o aluno está aprovado (média ≥ 7).
 #define N_NOTAS 2
 
 int main () {
@@ -53,7 +52,7 @@ int main () {
     } while (op == 0);
     
 
-    if (op == 0) {
+    if (op != 0) {
     printf("                                   * Saindo...");
     }
 
