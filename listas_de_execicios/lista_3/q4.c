@@ -8,7 +8,8 @@ int main (void) {
    printf(" F = {0, 1, ");
 
    for (int i = 2; i < 41; i++) {
-     termo3 = termo0 + termo1;
+
+      termo3 = termo0 + termo1;
 
       if (i % 2 == 0) {
          termo0 = termo3;
