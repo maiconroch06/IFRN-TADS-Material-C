@@ -5,9 +5,9 @@ int main (void) {
    int termo1 = 1;
    int termo3;
 
-   printf(" F = {0, 1,");
+   printf(" F = {0, 1, ");
 
-   for (int i = 2; i < 40; i++) {
+   for (int i = 2; i < 41; i++) {
      termo3 = termo0 + termo1;
 
       if (i % 2 == 0) {
@@ -15,9 +15,12 @@ int main (void) {
       } else {
          termo1 = termo3;
       }
-      printf(" %i,", termo3);
+      printf("%i", termo3);
+
+      if (i < 40) {
+         printf(", ");
+      }
    }
-   printf(" %i}",termo0 + termo1);
 
    return 0;
 }
