@@ -14,8 +14,8 @@ int main (void) {
         float media_geral;
 
         for (int i = 0; i < n_alunos; i++) {
-            notas1[i] = 10 * (rand() /(float) RAND_MAX);
-            notas2[i] = 10 * (rand() /(float) RAND_MAX);
+            notas1[i] = 10 * (rand() / (float) RAND_MAX);
+            notas2[i] = 10 * (rand() / (float) RAND_MAX);
 
             medias[i] = (notas1[i] + notas2[i]) / 2;
             media_geral += medias[i] / n_alunos;
