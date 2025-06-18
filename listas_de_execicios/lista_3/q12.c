@@ -21,6 +21,7 @@ int main (void) {
                 printf(" Nota %i: ", j + 1);
             }
             
+            
         } else {
             printf("\n Sinto muito, voce foi reprovado...");
         }
