@@ -2,53 +2,28 @@
 
 #define QUANT_ALUNOS 20
 #define QUANT_NOTAS 3
-float med;
 
 int main (void) {
+    int pesos[QUANT_NOTAS] = {2, 3, 5};
+    float soma_turma = 0, maior_media = 0, menor_media = 100;
+    int reprovados_total = 0, reprovados_falta = 0;
 
     for (int i = 0; i < QUANT_ALUNOS; i++) {
         int quant_faltas;
-        printf("\n ========= DADOS DO ALUNO %i =========\n", i + 1);
-        printf(" -> Informe suas faltas: ");
+        float notas[QUANT_NOTAS];
+        float soma_notas = 0, soma_pesos = 0, media_final;
+
+        printf(" Quantidade de faltas: ");
         scanf("%i",&quant_faltas);
 
-        //Se tiver +d 60 faltas reprova
         if (quant_faltas <= 60) {
-            float notas[QUANT_NOTAS];
-
-            for (int i = 0; i < QUANT_NOTAS; i++) {
-                printf(" -> Nota %i: ", i + 1);
-                scanf("%f",&notas[i]);
-                }
-
-                //Media Ponderada
-                for (int j = 0; j < QUANT_NOTAS; j++) {
-                    int pesos[3] = {2, 3, 5};
-                    
-                    float som_notas = 0;
-                    som_notas += (notas[j] * pesos[j]);
-
-                    float som_pesos = 0;
-                    som_pesos += pesos[j];
-
-                    med = som_notas / som_pesos;
-
-                    //Se passou por nota ou não
-                    if (med >= 60) {
-                        printf("\n * Media Final: %.2f",med);
-                        printf("\n * Parabens, voce foi aprovado!");
-                    } else {
-                        printf("\n * Media Final: %.2f",med);
-                        printf("\n * Sinto muito, voce foi reprovado.");
-                    }
-                }
+            for (int j = 0; j < QUANT_NOTAS; j++) {
+                printf(" Nota %i: ", j + 1);
+            }
+            
         } else {
-            printf("\n  * Sinto muito, voce foi reprovado.");
+            printf("\n Sinto muito, voce foi reprovado...");
         }
     }
-
-    printf("\n ========= RELATORIO =========\n");
-    printf(" => Media da turma: %.2f", med / QUANT_ALUNOS);
-    
     return 0;
 }
