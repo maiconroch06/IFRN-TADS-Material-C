@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main(void) {
 
     int n_linhas, n_colunas;
 
@@ -15,11 +15,12 @@ int main() {
 
         for (int i = 0; i < n_linhas; i++) {
             for (int j = 0; j < n_colunas; j++) {
-                //if (i == j) {
-                //  matriz[i][j] = 1;
-                //}
-                //matriz[i][j] = 0;
-                printf("%i. %i ", i, matriz[i][j]);
+                if(i == j) {
+                    matriz[i][j] = 1;
+                } else {
+                    matriz[i][j] = 0;
+                }                
+                printf("%i ",matriz[i][j]);
             }
         }
         printf("\n");
