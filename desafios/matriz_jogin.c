@@ -11,6 +11,7 @@ int main(void) {
 
     //gerar em 10 posições aleatorias de 0 a 9
     srand(time(NULL));
+    int linha_aleatoria[10] = 1 + rand() % 1;
         //adiciona o numero na posição
         for (int i = 0; i < 10; i++){
             for (int j = 0; j < 10; j++){
