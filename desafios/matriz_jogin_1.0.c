@@ -3,8 +3,8 @@
 #include <time.h>
 
 // tamanho da matriz
-#define N_LINHAS 10
-#define N_COLUNAS 10
+#define LINHAS 10
+#define COLUNAS 10
 
 int main(void)
 {
@@ -28,44 +28,41 @@ int main(void)
             for (int jogador = 0; jogador < 2; jogador++)
             {
                 // inicializar matriz
-                int matriz[N_LINHAS][N_COLUNAS] = {0};
+                int matriz[LINHAS][COLUNAS] = {0};
 
-                // exibir tabuleiro
+                // titulo do tabuleiro
                 printf("========= TABULEIRO %i =========\n", jogador + 1);
-                for (int i = 0; i < N_LINHAS; i++)
+                // exibição do tabuleiro
+                for (int i = 0; i < LINHAS; i++)
                 {
-                    for (int j = 0; j < N_COLUNAS; j++)
+                    printf("|");
+                    for (int j = 0; j < COLUNAS; j++)
                     {
                         printf(" %i ", matriz[i][j]);
-                    }
-                    printf("\n");
-                }
-
-                // linhas e colunas aleatorias
-                int l_aleatorias[N_LINHAS] = {(rand() % 10)};
-                int c_aleatorias[N_COLUNAS] = {(rand() % 10)};
-
-                // verificar se tem uma "bomba" no mesmo local
-                for (int i = 0; i < N_LINHAS; i++)
-                {
-                    for (int j = i; j <= i; j++)
-                    {
+                        
                         
                     }
+                    
+                    if (i != COLUNAS)
+                        {
+                            printf("|");
+                        }
+                    printf("\n");
+
                 }
+
+                break;
+            case 2:
+
+                break;
+
+            default:
+                printf(" # ERRO: modo de jogo invalido!");
+                continue;
             }
-
-            break;
-        case 2:
-
-            break;
-
-        default:
-            printf(" # ERRO: modo de jogo invalido!");
-            continue;
+            printf(" Digite [0] para jogar novamente: ");
+            scanf("%i", &jogar_novamente);
         }
-        printf(" Digite [0] para jogar novamente: ");
-        scanf("%i", &jogar_novamente);
+        return 0;
     }
-    return 0;
 }
