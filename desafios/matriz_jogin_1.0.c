@@ -16,10 +16,12 @@ int main(void)
     {
         // qual modo de jogo?
         int modo_jogo;
-        printf("\n\n ======== BEM VINDO AO MINI JOGO ========\n");
+        printf("\n ======== BEM VINDO AO MINIGAME ========\n");
         printf(" [1] - Vence com quantidade de tentativas.\n");
         printf(" [2] - Vence quem encontrar primeiro.\n");
-        printf("     -> Modo de jogo: ");
+        printf(" [3] - Sair do Minigame.\n");
+        printf(" =========================================\n");
+        printf("  -> Modo de jogo: ");
         scanf("%i", &modo_jogo);
 
         switch (modo_jogo)
@@ -28,10 +30,10 @@ int main(void)
             // quem esta jogando?
             for (int jogador = 0; jogador < 2; jogador++)
             {
-
                 int linhas_aleatorias[QUANTOS_ENCONTRAR_1];
                 int colunas_aleatorias[QUANTOS_ENCONTRAR_1];
 
+                // adiciona numeros aluatorios em vetores que determinará a posição aleatoria
                 for (int i = 0; i < 5; i++)
                 {
                     linhas_aleatorias[i] = (rand() % 10);
@@ -39,10 +41,18 @@ int main(void)
                 }
 
                 // exibição do tabuleiro | tela do jogador
+                char matriz[LINHAS][COLUNAS];
                 int cont_tentativas = 0, cont_quantos_1_encontrado = 0;
 
-                // inicializando a matriz
-                int matriz[LINHAS][COLUNAS] = {0};
+                // inicializando a matriz com caracters 0
+                for (int i = 0; i < LINHAS; i++)
+                {
+                    for (int j = 0; j < COLUNAS; j++)
+                    {
+                        matriz[i][j] = '0';
+                    }
+                }
+
                 do
                 {
                     // titulo do tabuleiro
@@ -52,10 +62,11 @@ int main(void)
                         printf("|");
                         for (int j = 0; j < COLUNAS; j++)
                         {
-                            printf(" %i ", matriz[i][j]);
+                            printf(" %c ", matriz[i][j]);
                         }
                         printf("|");
 
+                        //minitela de informações para o jogador
                         if (i == 1)
                         {
                             printf("      ======= STATUS =======");
@@ -75,7 +86,7 @@ int main(void)
                         printf("\n");
                     }
 
-                    /*/ teste
+                    // teste
                     printf("\n\n Disposicao de linhas: ");
                     // 5 é o numero que queremos quantas vezes apareça
                     for (int i = 0; i < 5; i++)
@@ -101,12 +112,12 @@ int main(void)
                     {
                         if (linhas_aleatorias[i] == escolha_da_linha - 1 && colunas_aleatorias[i] == escolha_da_coluna - 1)
                         {
-                            matriz[escolha_da_linha - 1][escolha_da_coluna - 1] = 1;
+                            matriz[escolha_da_linha - 1][escolha_da_coluna - 1] = '1';
                             cont_quantos_1_encontrado++;
-                        } // adicionar condição quando for inserido numero fora do escopo da matriz
+                        } // adicionar condição quando for inserido o numero fora do escopo da matriz
                         else
                         {
-                            matriz[escolha_da_linha - 1][escolha_da_coluna - 1] = 3;
+                            matriz[escolha_da_linha - 1][escolha_da_coluna - 1] = 'X';
                         }
                     }
 
@@ -118,6 +129,10 @@ int main(void)
             break;
         case 2:
 
+            break;
+
+        case 3:
+            // escolha de sair do minigame
             break;
 
         default:
