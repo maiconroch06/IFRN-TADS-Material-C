@@ -14,7 +14,7 @@ int main(void) {
     if (quant_jogadores > 0) {
         //definir tamanho da matriz
         int linhas, colunas;
-        printf(" -> Defina o tamanho da matriz (i == j): ");
+        printf(" -> Defina o tamanho da matriz (i j): ");
         scanf("%i %i", &linhas, &colunas);
 
         if (linhas == colunas) {
