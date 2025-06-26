@@ -10,13 +10,13 @@
 int main(void)
 {
     // jogar novamente?
-    int jogar_novamente = 0;
+    int jogar_novamente = 1;
 
-    while (jogar_novamente == 0)
+    while (jogar_novamente != 0)
     {
         // qual modo de jogo?
         int modo_jogo;
-        printf("\n ======== BEM VINDO AO MINIGAME ========\n");
+        printf("\n ========= BEM VINDO AO MINIGAME =========\n");
         printf(" [1] - Vence com quantidade de tentativas.\n");
         printf(" [2] - Vence quem encontrar primeiro.\n");
         printf(" [3] - Sair do Minigame.\n");
@@ -24,17 +24,23 @@ int main(void)
         printf("  -> Modo de jogo: ");
         scanf("%i", &modo_jogo);
 
+        // guardar a quantidade de pontuação do jogador 1
+        int tentativas_jogador[2];
+
         switch (modo_jogo)
         {
         case 1:
+
             // quem esta jogando?
             for (int jogador = 0; jogador < 2; jogador++)
             {
-                int linhas_aleatorias[QUANTOS_ENCONTRAR_1];
-                int colunas_aleatorias[QUANTOS_ENCONTRAR_1];
 
                 // adiciona numeros aluatorios em vetores que determinará a posição aleatoria
+
+                int linhas_aleatorias[QUANTOS_ENCONTRAR_1];
+                int colunas_aleatorias[QUANTOS_ENCONTRAR_1];
                 for (int i = 0; i < 5; i++)
+
                 {
                     linhas_aleatorias[i] = (rand() % 10);
                     colunas_aleatorias[i] = (rand() % 10);
@@ -56,7 +62,7 @@ int main(void)
                 do
                 {
                     // titulo do tabuleiro
-                    printf("\n\n ========= TABULEIRO %i =========\n", jogador + 1);
+                    printf("\n\n ========= TABULEIRO %i ========\n", jogador + 1);
                     for (int i = 0; i < LINHAS; i++)
                     {
                         printf("|");
@@ -66,27 +72,27 @@ int main(void)
                         }
                         printf("|");
 
-                        //minitela de informações para o jogador
+                        // minitela de informações para o jogador
                         if (i == 1)
                         {
-                            printf("      ======= STATUS =======");
+                            printf("     ======= STATUS =======");
                         }
                         if (i == 2)
                         {
-                            printf("      | Tentativas: %i      |", cont_tentativas);
+                            printf("     | Tentativas: %i      |", cont_tentativas);
                         }
                         if (i == 3)
                         {
-                            printf("      | Quantos restam: %i  |", QUANTOS_ENCONTRAR_1 - cont_quantos_1_encontrado);
+                            printf("     | Quantos restam: %i  |", QUANTOS_ENCONTRAR_1 - cont_quantos_1_encontrado);
                         }
                         if (i == 4)
                         {
-                            printf("      ======================");
+                            printf("     ======================");
                         }
                         printf("\n");
                     }
 
-                    // teste
+                    /*/ teste
                     printf("\n\n Disposicao de linhas: ");
                     // 5 é o numero que queremos quantas vezes apareça
                     for (int i = 0; i < 5; i++)
@@ -102,29 +108,66 @@ int main(void)
 
                     // tentativas do usuario
                     int escolha_da_linha, escolha_da_coluna;
-                    printf("\n =========== DECICAO ===========\n");
+                    printf(" =========== DECICAO ===========\n\n");
                     printf(" -> Escolha a linha [1 a 10]: ");
                     scanf("%i", &escolha_da_linha);
                     printf(" -> Escolha a coluna [1 a 10]: ");
                     scanf("%i", &escolha_da_coluna);
 
-                    for (int i = 0; i < QUANTOS_ENCONTRAR_1; i++)
+                    if ((escolha_da_linha < 1 || escolha_da_linha > LINHAS) || (escolha_da_coluna < 1 || escolha_da_coluna > COLUNAS))
                     {
-                        if (linhas_aleatorias[i] == escolha_da_linha - 1 && colunas_aleatorias[i] == escolha_da_coluna - 1)
+                        printf("\n # ERRO: valor fora da tabela! Tente novamente.");
+                        continue;
+                    }
+                    else if (matriz[escolha_da_linha - 1][escolha_da_coluna - 1] != '0')
+                    {
+                        printf("\n Voce ja fez essa escolha! Tente novamente.");
+                        continue;
+                    }
+                    else
+                    {
+                        for (int i = 0; i < QUANTOS_ENCONTRAR_1; i++)
                         {
-                            matriz[escolha_da_linha - 1][escolha_da_coluna - 1] = '1';
-                            cont_quantos_1_encontrado++;
-                        } // adicionar condição quando for inserido o numero fora do escopo da matriz
-                        else
-                        {
-                            matriz[escolha_da_linha - 1][escolha_da_coluna - 1] = 'X';
+                            if (linhas_aleatorias[i] == (escolha_da_linha - 1) && colunas_aleatorias[i] == (escolha_da_coluna - 1))
+                            {
+                                matriz[escolha_da_linha - 1][escolha_da_coluna - 1] = '1';
+                                cont_quantos_1_encontrado++;
+                                break;
+                            } // adicionar condição quando for inserido o numero fora do escopo da matriz
+                            else
+                            {
+                                matriz[escolha_da_linha - 1][escolha_da_coluna - 1] = 'X';
+                            }
                         }
                     }
 
                     cont_tentativas++;
+
+                    if (jogador == 1 && cont_tentativas == tentativas_jogador[0])
+                    {
+                        printf(" O jogador 2 exerceu as tentativas do jogador 1!\n");
+                        cont_tentativas++;
+
+                        break;
+                    }
+
                 } while (cont_quantos_1_encontrado != QUANTOS_ENCONTRAR_1);
+                // a quantidade de tentativas do jogador 1
+                tentativas_jogador[jogador] = cont_tentativas;
             }
-            // exibir placar
+            // jogador 1 ganha
+            if (tentativas_jogador[0] < tentativas_jogador[1])
+            {
+                printf("  Jogador 1 venceu! Com %i tentativas.\n", tentativas_jogador[0]);
+            }
+            else if (tentativas_jogador[1] < tentativas_jogador[0])
+            {
+                printf("  Jogador 2 venceu! Com %i tentativas.\n", tentativas_jogador[1]);
+            }
+            else
+            {
+                printf(" Empate! Com total de %i tentativas.\n", tentativas_jogador[1]);
+            }
 
             break;
         case 2:
@@ -139,8 +182,8 @@ int main(void)
             printf(" # ERRO: modo de jogo invalido!");
             continue;
         }
-        printf("\n\n Digite [0] para jogar novamente: ");
-        scanf("%i", &jogar_novamente);
+        printf("\n Digite [0] para jogar sair: ");
+        scanf("%i", &jogar_novamente);1
     }
     printf("\n   Saindo do minigame.......\n\n");
     return 0;
