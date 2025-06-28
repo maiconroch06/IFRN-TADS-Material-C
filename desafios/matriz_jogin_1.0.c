@@ -7,6 +7,7 @@
 #define COLUNAS 10
 #define QUANTOS_ENCONTRAR_1 5 // quantos numeros uns encontrar?
 
+
 int main(void)
 {
     // jogar novamente?
@@ -26,7 +27,7 @@ int main(void)
 
         // guardar a quantidade de pontuação do jogador 1
         int tentativas_jogador[2];
-
+        srand(time(NULL)); // torna o jogo mais aleatorio
         switch (modo_jogo)
         {
         case 1:
@@ -36,7 +37,6 @@ int main(void)
             {
 
                 // adiciona numeros aluatorios em vetores que determinará a posição aleatoria
-
                 int linhas_aleatorias[QUANTOS_ENCONTRAR_1];
                 int colunas_aleatorias[QUANTOS_ENCONTRAR_1];
                 for (int i = 0; i < 5; i++)
@@ -62,15 +62,15 @@ int main(void)
                 do
                 {
                     // titulo do tabuleiro
-                    printf("\n\n ========= TABULEIRO %i ========\n", jogador + 1);
+                    printf("\n\n  ========= TABULEIRO %i =========\n", jogador + 1);
                     for (int i = 0; i < LINHAS; i++)
                     {
-                        printf("|");
+                        printf(" |");
                         for (int j = 0; j < COLUNAS; j++)
                         {
                             printf(" %c ", matriz[i][j]);
                         }
-                        printf("|");
+                        printf("| %i", i + 1);
 
                         // minitela de informações para o jogador
                         if (i == 1)
@@ -92,23 +92,24 @@ int main(void)
                         printf("\n");
                     }
 
-                    /*/ teste
+                    /*/ Modo Desenvolvedor: Quando vc n tiver afim de procurar os numero é só tirar o asterisco dessa linha.
                     printf("\n\n Disposicao de linhas: ");
-                    // 5 é o numero que queremos quantas vezes apareça
+                    // 5 é o numero que queremos que o numero 1 apareça
                     for (int i = 0; i < 5; i++)
                     {
-                        printf(" %i ", linhas_aleatorias[i]);
+                        printf(" %i ", linhas_aleatorias[i] + 1);
                     }
 
                     printf("\n Disposicao de colunas: ");
                     for (int i = 0; i < 5; i++)
                     {
-                        printf(" %i ", colunas_aleatorias[i]);
-                    } // final teste*/
+                        printf(" %i ", colunas_aleatorias[i] + 1);
+                    }
+                    printf("\n"); // final do gabrito*/
 
                     // tentativas do usuario
                     int escolha_da_linha, escolha_da_coluna;
-                    printf(" =========== DECICAO ===========\n\n");
+                    printf("  =========== DECICAO ===========\n\n");
                     printf(" -> Escolha a linha [1 a 10]: ");
                     scanf("%i", &escolha_da_linha);
                     printf(" -> Escolha a coluna [1 a 10]: ");
@@ -170,6 +171,7 @@ int main(void)
             }
 
             break;
+
         case 2:
 
             // quem esta jogando?
@@ -177,7 +179,6 @@ int main(void)
             {
 
                 // adiciona numeros aluatorios em vetores que determinará a posição aleatoria
-
                 int linhas_aleatorias[QUANTOS_ENCONTRAR_1];
                 int colunas_aleatorias[QUANTOS_ENCONTRAR_1];
                 for (int i = 0; i < 5; i++)
@@ -203,15 +204,15 @@ int main(void)
                 do
                 {
                     // titulo do tabuleiro
-                    printf("\n\n ========= TABULEIRO %i ========\n", jogador + 1);
+                    printf("\n\n  ========= TABULEIRO %i =========\n", jogador + 1);
                     for (int i = 0; i < LINHAS; i++)
                     {
-                        printf("|");
+                        printf(" |");
                         for (int j = 0; j < COLUNAS; j++)
                         {
                             printf(" %c ", matriz[i][j]);
                         }
-                        printf("|");
+                        printf("| %i", i + 1);
 
                         // minitela de informações para o jogador
                         if (i == 1)
@@ -233,23 +234,24 @@ int main(void)
                         printf("\n");
                     }
 
-                    /*/ teste
+                    /*/ Modo Desenvolvedor: Quando vc n tiver afim de procurar os numero é só tirar o asterisco dessa linha.
                     printf("\n\n Disposicao de linhas: ");
-                    // 5 é o numero que queremos quantas vezes apareça
+                    // 5 é o numero que queremos que o numero 1 apareça
                     for (int i = 0; i < 5; i++)
                     {
-                        printf(" %i ", linhas_aleatorias[i]);
+                        printf(" %i ", linhas_aleatorias[i] + 1);
                     }
 
                     printf("\n Disposicao de colunas: ");
                     for (int i = 0; i < 5; i++)
                     {
-                        printf(" %i ", colunas_aleatorias[i]);
-                    } // final teste*/
+                        printf(" %i ", colunas_aleatorias[i] + 1);
+                    }
+                    printf("\n"); // final do gabrito*/
 
                     // tentativas do usuario
                     int escolha_da_linha, escolha_da_coluna;
-                    printf(" =========== DECICAO ===========\n\n");
+                    printf("  =========== DECICAO ===========\n\n");
                     printf(" -> Escolha a linha [1 a 10]: ");
                     scanf("%i", &escolha_da_linha);
                     printf(" -> Escolha a coluna [1 a 10]: ");
