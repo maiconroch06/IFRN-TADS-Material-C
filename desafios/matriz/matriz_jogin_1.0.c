@@ -146,7 +146,7 @@ int main(void)
 
                     if (jogador == 1 && cont_tentativas == tentativas_jogador[0])
                     {
-                        printf(" O jogador 2 exerceu as tentativas do jogador 1!\n");
+                        printf(" O jogador 2 exercedeu as tentativas do jogador 1!\n");
                         cont_tentativas++;
                         break;
                     }
