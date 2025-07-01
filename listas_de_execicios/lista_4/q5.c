@@ -46,7 +46,7 @@ int main(void)
             }
             if (valores_decrescente[j] < valores_decrescente[j + 1])
             {
-                int aux = valores_crescente[j];
+                int aux = valores_decrescente[j];
                 valores_decrescente[j] = valores_decrescente[j + 1];
                 valores_decrescente[j + 1] = aux;
             }
