@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 #define N_MAX_ALUNOS 100
 
@@ -21,7 +22,7 @@ int main (void) {
         printf(" ========= CADASTRO DE ALUNOS =========\n"); 
         for (int i = 0; i < n_alunos; i++)
         {
-            printf("\n -------> Aluno <-------\n");
+            printf(" -------> Aluno <-------\n");
 
             printf(" -> Nome: ");
             scanf("%s", &alunos[i].nome);
@@ -35,37 +36,33 @@ int main (void) {
         
         for (int i = 0; i < n_alunos; i++)
         {
-            for (int j = 0; j < n_alunos; j++)
+            for (int j = i + 1; j < n_alunos - 1; j++)
             {
                 if (alunos[i].media_final > alunos[j].media_final) {
-                    int aux1 = alunos[i].matricula;
-                    int axu2 = alunos[i].nome;
-                    int axu2 = alunos[i].media_final;
+                    int aux_matricula = alunos[i].matricula;
+                    int aux_media = alunos[i].media_final;
+                    char aux_nome[50];
+                    strcpy(aux_nome, alunos[i].nome);
 
                     alunos[i].matricula = alunos[j].matricula;
-                    alunos[i].nome = alunos[j].nome;
                     alunos[i].media_final = alunos[j].media_final;
+                    strcpy(alunos[i].nome, alunos[j].nome);
 
-                    alunos[j].matricula = aux1;
-                    alunos[j].nome = aux2;
-                    alunos[j].media_final = aux3;
+                    alunos[j].matricula = aux_matricula;
+                    alunos[j].media_final = aux_media;
+                    strcpy(alunos[j].nome, aux_nome);
 
                 }
             }
-            
-            
-            
-            
-
         }
 
         printf("\n ========= ALUNOS CADASTRADOS =========\n"); 
         for (int i = 0; i < n_alunos; i++)
         {
-            printf(" # Matricola: %i\n", alunos[i].matricula);
-            printf(" # Nome: %s\n", alunos[i].nome);
-            printf(" # Media Final: %.2f\n", alunos[i].media_final);
-            printf(" # Status: %s", alunos[i].media_final >= 6.0 ? "APROVADO" : "REPROVADO");
+            printf("  # Matricola: %i\n", alunos[i].matricula);
+            printf("  # Nome: %s\n", alunos[i].nome);
+            printf("  # Media Final: %.2f\n", alunos[i].media_final);
+            printf("  # Status: %s", alunos[i].media_final >= 6.0 ? "APROVADO" : "REPROVADO");
 
             printf("\n -------------------------------------\n");
         }
