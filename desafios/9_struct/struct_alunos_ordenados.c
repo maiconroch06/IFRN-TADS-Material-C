@@ -34,6 +34,7 @@ int main (void) {
             scanf("%f", &alunos[i].media_final);
         }
         
+        // ordernando os alunos em ordem decrescente
         for (int i = 0; i < n_alunos; i++)
         {
             for (int j = i + 1; j < n_alunos - 1; j++)
