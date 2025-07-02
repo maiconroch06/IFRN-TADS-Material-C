@@ -24,27 +24,42 @@ float calulo(float num1, float num2, char operador) {
     }
 }
 
-int main (void) {
-	float x, y, resultado;
+typedef struct Calculadora {
+    float x, y, resultado;
     char op;
+    int continuar;
+};
 
+
+int main (void) {
+
+    struct Calculadora calcula;
+
+    do {
     printf(" =========== Calculadora ===========\n");
     printf(" [+] - Adicao        [-] - Subtracao\n");
     printf(" [*] - Multiplicacao [/] - Divisao\n");
     printf(" ===================================\n\n");
 
     printf(" -> Operacao: ");
-    scanf("%c",&op);
+    scanf("%c",&calcula.op);
     printf(" -> Numero 1: ");
-    scanf("%f",&x);
+    scanf("%f",&calcula.x);
     printf(" -> Numero 2: ");
-    scanf("%f",&y);
+    scanf("%f",&calcula.y);
 
-    resultado = calulo(x,y,op);
+    calcula.resultado = calulo(calcula.x, calcula.y, calcula.op);
 
     printf("\n ============ RESULTADO ============\n");
-    printf("       -- %.1f %c %.1f = %.1f --", x, op, y, resultado);
+    printf("       -- %.1f %c %.1f = %.1f --", calcula.x, calcula.y, calcula.op, calcula.resultado);
     printf("\n ===================================\n");
+
+    
+    printf(" -> Digite [0] para sair: ");
+    scanf("%i", &calcula.continuar);
+
+    } while (calcula.continuar != 0);
+    
 
     return 0;
 }
