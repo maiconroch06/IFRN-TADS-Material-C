@@ -25,27 +25,26 @@ float calulo(float num1, float num2, char operador) {
 }
 
 int main (void) {
-	float x,y,resultado;
+	float x, y, resultado;
     char op;
 
-    printf(" ======= Calculadora =======\n");
-    printf("  [1] - Adicao\n");
-    printf("  [2] - Subtracao\n");
-    printf("  [3] - Multiplicacao\n");
-    printf("  [4] - Divisao\n");
-    printf(" ===========================\n");
+    printf(" =========== Calculadora ===========\n");
+    printf(" [+] - Adicao        [-] - Subtracao\n");
+    printf(" [*] - Multiplicacao [/] - Divisao\n");
+    printf(" ===================================\n\n");
 
-    printf("\n -> Escolha a operacao desejada: ");
+    printf(" -> Operacao: ");
     scanf("%c",&op);
-        
-    printf("\n -> Informe o primeiro numero: ");
+    printf(" -> Numero 1: ");
     scanf("%f",&x);
-    printf(" -> Informe o segundo numero: ");
+    printf(" -> Numero 2: ");
     scanf("%f",&y);
 
     resultado = calulo(x,y,op);
 
-    printf("\n -> %.1f %c %.1f = %.1f", x, op, y, resultado);
+    printf("\n ============ RESULTADO ============\n");
+    printf("       -- %.1f %c %.1f = %.1f --", x, op, y, resultado);
+    printf("\n ===================================\n");
 
     return 0;
 }
