@@ -1,4 +1,4 @@
-//gerar uma matriz 10x10, dois jogadores que descobrir as posições dos numeros 1 dentro da matriz que gera aleatorio
+ //gerar uma matriz 10x10, dois jogadores que descobrir as posições dos numeros 1 dentro da matriz que gera aleatorio
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
