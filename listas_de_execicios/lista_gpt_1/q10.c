@@ -32,6 +32,5 @@ int main (void) {
     printf("\n Quantidade de negativos: %i", cont_negativos);
     printf("\n Quantidade de zeros: %i", cont_zeros);
     
-
     return 0;
 }
