@@ -1,16 +1,35 @@
+//Leia uma matriz 3x3 e exiba a soma da diagonal principal.
 #include <stdio.h>
-//Desenhe um triângulo de asteriscos com base de n linhas.
-int main() {
-    int n;
-    printf("Digite o numero de linhas: ");
-    scanf("%i", &n);
+#include <stdlib.h>
+#include <time.h>
 
-    for (int i = 1; i <= n; i++) {
-        for (int j = 1; j <= i; j++) {
-            printf("i");
+#define LINHAS 3
+#define COLUNAS 3
+
+int main (void) {
+    int matriz[LINHAS][COLUNAS];
+    int som = 0;
+
+    srand(time(NULL));
+    for (int i = 0; i < LINHAS; i++)
+    {
+        for (int j = 0; j < COLUNAS; j++)
+        {
+            matriz[i][j] = 10 + rand() % 90;
+            printf("  %i  ", matriz[i][j]);
+
+            if (i == j)
+            {
+                som += matriz[i][j];
+            }
         }
         printf("\n");
     }
-    
+
+    // exibição da matriz
+
+
+    printf("\n Soma dos valores da diagonal: %i", som);
+
     return 0;
 }
