@@ -17,10 +17,6 @@ int main(void) {
 
 11.Imprima os 15 primeiros números da sequência de Fibonacci.
 
-13.Leia uma quantidade n e depois n números, e calcule a média dos positivos e dos negativos separadamente.
-
-15.
--
 16.Imprima todos os números palíndromos entre 100 e 999 (ex: 121, 191, 212...).
 
 17.Leia um número binário (ex: 1011) e converta para decimal usando for.
