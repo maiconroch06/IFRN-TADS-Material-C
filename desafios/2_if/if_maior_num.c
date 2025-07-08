@@ -11,7 +11,7 @@ int main(void) {
     printf("Informe o segundo numero: ");
     scanf("%f",&num2);
     
-    printf("Informe o terveiro numero: ");
+    printf("Informe o terceiro numero: ");
     scanf("%f",&num3);
 
     if (num1 > num2 && num3) {

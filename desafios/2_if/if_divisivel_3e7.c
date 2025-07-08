@@ -1,5 +1,3 @@
-//e da al8 e da ds8 e ds11 ds10_1
-
 #include <stdio.h>
 #include <math.h>
 

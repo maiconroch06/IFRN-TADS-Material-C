@@ -12,10 +12,10 @@ int main(void) {
     scanf("%lf", &n1);
 
     if (n1 > 0) {
-        printf("\nRaiz Quadrada de %.2lf e: %.2lf", n1, sqrt(n1));
+        printf("\nRaiz Quadrada de %.2lf: %.2lf", n1, sqrt(n1));
 
     } else if (n1 < 0) {
-        printf("\nO quadrado do numero %.2lf e: %.2lf", n1, n1*n1);
+        printf("\nO quadrado do numero %.2lf: %.2lf", n1, n1*n1);
         
     } else {
         printf("\nO numero e igual a 0.");
