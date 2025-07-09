@@ -3,8 +3,8 @@
 int fatorial(int n1) {
     int resultado = 1;
     
-    for (int i = 1; i <= n1; i++) {
-        resultado = i;
+    for (int i = 0; i < n1; i++) {
+        resultado *= n1 - i;
     }
     return resultado;
 }
