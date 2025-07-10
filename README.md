@@ -1,4 +1,4 @@
-![Exemplo de código em execução](assets/exemplo-execucao.gif)
+<img src:"image/cat.gif" align="right" width="300">
 
 # IFRN-TADS-Material-C
 
