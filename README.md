@@ -1,4 +1,4 @@
-<img src="image/happy-cat.gif" align="right" width="100">
+<img src="image/happy-cat.gif" align="right" width="90">
 
 # IFRN-TADS-Material-C
 
