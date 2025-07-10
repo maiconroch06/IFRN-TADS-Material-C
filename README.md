@@ -49,9 +49,13 @@ Este repositório é de uso pessoal e acadêmico para a disciplina de **Programa
 3. Navegue até a pasta desejada e abra os arquivos .c com sua IDE de preferência.
 4. Compile e execute os códigos para estudar os exemplos ou praticar resolvendo os desafios.
 
+---
+
 ## 🤝 Contribuição
 
 Contribuições são bem-vindas! Se quiser sugerir melhorias, correções ou adicionar novos conteúdos, sinta-se livre para abrir um Pull Request.
+
+---
 
 ## 👨‍💻 Autor
 
