@@ -1,5 +1,3 @@
-<img src="image/happy-cat.gif" align="right" width="80">
-
 # IFRN-TADS-Material-C
 
 ![Language](https://img.shields.io/badge/language-C-blue.svg)
@@ -60,3 +58,4 @@ Contribuições são bem-vindas! Se quiser sugerir melhorias, correções ou adi
 ## 👨‍💻 Autor
 
 Este repositório foi criado por [Maicon_Rocha](https://github.com/maiconroch06) como parte do curso de **Analise e desenvolvimento de Sistemas** **(TADS)** no **IFRN - Campus Nova Cruz**.
+<img src="image/happy-cat.gif" align="right" width="50">
