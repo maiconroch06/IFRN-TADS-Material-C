@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <math.h>
 
 #define TAM 5000
 
@@ -44,7 +43,7 @@ int main(void)
   printf(" Media dos numeros: %.2f \n", media);
   printf(" Desvio padrao: %.2f ", Dp);
 
-  /*/ test
+  /*/ Removendo o "*" no inicio desta linha habilida o modo test
   int num5[TAM];
   printf("\n\n Sequencia: ");
   for (int i = 0; i < TAM; i++)
