@@ -6,7 +6,6 @@
 
 Este repositório é de uso pessoal e acadêmico para a disciplina de **Programação de Computadores**, que visa desenvolver habilidades fundamentais em lógica de programação e resolução de problemas computacionais, utilizando a linguagem C como base para introdução à ciência da computação.
 
----
 
 ## 🎯 Este repositório foi criado com o objetivo de:
 
@@ -15,18 +14,17 @@ Este repositório é de uso pessoal e acadêmico para a disciplina de **Programa
 - Documentar atividades avaliativas e desafios propostos;
 - Servir como base para futuras consultas e aprendizado contínuo da linguagem C.
 
----
 
 ## 📁 Estrutura do Repositório
-  `challenges/`: contém desafios propostos em aula com foco na aplicação prática dos conceitos recém-aprendidos.
+  `avaliacoes/`: materiais avaliativos:
 
-  `exercise-lists/`: listas de exercícios regulares, criadas pelo professor ou com apoio do ChatGPT, para reforçar os conteúdos vistos em aula.
+   - `prova/`: provas avaliativas realizadas presencialmente em sala de aula.
+   - `PROG-atividade/`: tarefas enviadas como avaliação individual externa (para casa).
+   
+  `desafios/`: contém desafios propostos em aula com foco na aplicação prática dos conceitos recém-aprendidos.
 
-  `exams/`: materiais avaliativos:
+  `listas-exercicio/`: listas de exercícios regulares, criadas pelo professor ou com apoio do ChatGPT, para reforçar os conteúdos vistos em aula.
 
-   - `assignments/`: provas avaliativas realizadas presencialmente em sala de aula.
-   - `PROG-activ/`: tarefas enviadas como avaliação individual externa (para casa).
----
 
 ## 💡 Tecnologias Utilizadas
 
@@ -34,7 +32,6 @@ Este repositório é de uso pessoal e acadêmico para a disciplina de **Programa
 - **IDEs recomendadas:** [Visual Studio Code](https://code.visualstudio.com/)
 - **Compatível com:** Windows, Linux, macOS
 
----
 
 ## 📚 Como Usar
 
@@ -47,13 +44,11 @@ Este repositório é de uso pessoal e acadêmico para a disciplina de **Programa
 3. Navegue até a pasta desejada e abra os arquivos .c com sua IDE de preferência.
 4. Compile e execute os códigos para estudar os exemplos ou praticar resolvendo os desafios.
 
----
 
 ## 🤝 Contribuição
 
 Contribuições são bem-vindas! Se quiser sugerir melhorias, correções ou adicionar novos conteúdos, sinta-se livre para abrir um Pull Request.
 
----
 
 ## 👨‍💻 Autor
 
