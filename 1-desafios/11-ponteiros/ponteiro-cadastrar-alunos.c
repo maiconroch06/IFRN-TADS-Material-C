@@ -4,33 +4,26 @@ Desenvolva um programa estruturado em funções para cadastrar um conjunto de al
 
 #include <stdio.h>
 
-struct Alunos aluno {
+typedef struct Alunos {
     char nome[50];
-    int matricola, idade;
-    double nota1, nota2;
+    int matricola;
+    int idade;
+    double nota1;
+    double nota2;
 };
-typedef struct Alunos aluno;
 
-void escolha (int);
-void cadastro (int, Alunos * aluno);
-void exibir (Alunos * aluno);
+void escolha(int);
+void cadastro(int, Alunos * aluno);
+void exibir(aluno * aluno);
 
 int main(void) {
     int n_alunos;
 
-        printf(" Quantidade de alunos: ");
-        scanf("%i", n_alunos);
+    printf(" Quantidade de alunos: ");
+    scanf("%i", n_alunos);
 
             
-            cadastro(n_alunos,);
-
-
-            
-        }
-        
-        
-
-
+    cadastro(n_alunos,);
 
     return 0;
 }
@@ -43,7 +36,7 @@ void cadastro (int n_alunos, Alunos * aluno) {
             printf(" Matricola: ");
             scanf("%s", &aluno[i].nome);
             printf(" Nome: ");
-            scanf("%s", &aluno[i].nome);
+            
             printf(" Idade: ");
             scanf("%i", &aluno[i].idade);
             printf(" Nota1: ");
