@@ -38,7 +38,7 @@ Este repositório é de uso pessoal e acadêmico para a disciplina de **Programa
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/IFRN-TADS-Material-C.git
+   git clone https://github.com/maiconroch06/IFRN-TADS-Material-C.git
    ```
    
 3. Navegue até a pasta desejada e abra os arquivos .c com sua IDE de preferência.
