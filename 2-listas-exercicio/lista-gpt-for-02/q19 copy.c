@@ -20,7 +20,7 @@ int main (void) {
     }
     for (int j = 0; j > 0; j--)
     {
-        p *= j
+        p *= j;
     }
 
     printf("\n");
