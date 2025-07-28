@@ -1,5 +1,15 @@
 #include <stdio.h>
-
+/*
+Em uma determinada instituição de ensino, o sistema de avaliação das disciplinas semestrais de 
+100 aulas ocorre da seguinte maneira: i. são realizadas três avaliações; ii. a nota final é calculada a 
+partir da média ponderada de pesos 2, 3 e 5, respectivamente; iii. o aluno é aprovado se obtiver 
+nota final superior ou igual a 60 e tiver comparecido a pelo menos 40 aulas. Sabendo disso, crie 
+um programa em linguagem C que receba três notas e o número de aulas frequentadas de todos 
+os alunos de uma turma semestral de 20 alunos. Para cada aluno, deve-se exibir o valor de sua 
+média final e informar, para cada um deles, se foi aprovado ou não. Adicionalmente, o programa 
+deve apresentar um relatório que contém os valores da maior e menor nota final, a média da nota 
+final da turma, o total de alunos reprovados e a porcentagem de alunos reprovados por falta.
+*/
 #define QUANT_ALUNOS 20
 #define QUANT_NOTAS 3
 
