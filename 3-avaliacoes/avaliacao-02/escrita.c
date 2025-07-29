@@ -7,7 +7,8 @@ int main(void){
     arquivo = fopen("teste_escrita.txt","w");
 
     if (arquivo != NULL){
-        printf(" ** Aeqquivo aberto com sucesso!");
+        printf(" ** Arquivo aberto com sucesso!");
+        
         fprintf(arquivo,"%s","Meu primeiro arquivo");
         
         fclose(arquivo);
