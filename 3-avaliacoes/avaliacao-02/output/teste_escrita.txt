@@ -1,0 +1,10 @@
+Meu primeiro arquivo de texto
+5
+Serrinha
+Monte Alegre
+Nova Cruz
+Montanhas
+Santo Antonio
+20.00;20.00;40.00
+30.00;0.00;40.00
+65.00;41.00;23.00

@@ -92,7 +92,7 @@ int main(void)
                     printf(" ================================\n");
                     printf("   1  2  3  4  5  6  7  8  9  10\n");
 
-                    /*/ Modo Desenvolvedor: Quando vc n tiver afim de procurar os numero é só tirar o asterisco dessa linha.
+                    // Modo Desenvolvedor: Quando vc n tiver afim de procurar os numero é só tirar o asterisco dessa linha.
                     printf("\n\n Disposicao de linhas: ");
                     // 5 é o numero que queremos que o numero 1 apareça
                     for (int i = 0; i < 5; i++)
