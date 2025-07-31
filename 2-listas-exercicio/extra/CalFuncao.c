@@ -1,4 +1,4 @@
-#include "prototiposFuncoes.h"
+//#include "prototiposFuncoes.h"
 #include <math.h>
 
 float CalSoma (float n1, float n2) {

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "CalFuncao.c"
+#include <Windows.h>
 
 int main() {
     int continuar = 1;
@@ -20,10 +21,28 @@ int main() {
         printf(" =========================================\n");
 
         float num1, num2;
-        printf(" -> Informe o primeiro numero: ");
+        printf(" -> ");
         scanf("%f",&num1);
 
-        printf(" -> Informe o segundo numero: ");
+        switch(escolha){
+            case 1:
+                printf(" +");
+            break;
+            case 2:
+                printf(" -");
+            break;
+            case 3:
+                printf(" *");
+            break;
+            case 4:
+                printf(" /");
+            case 5:
+                printf(" ¬");
+            break;
+            case 6:
+                printf(" ^");
+        
+        printf(" ");
         scanf("%f",&num2);
         printf(" ================ RESULTADO ==============\n");
 
@@ -55,9 +74,12 @@ int main() {
                     break;
                 }
         }
+        printf("\n =========================================");
 
         printf(" -> Digite [0] para sair: ");
         scanf("%i",&continuar);
+
+        system("cls");
 
     } while (continuar);
 
