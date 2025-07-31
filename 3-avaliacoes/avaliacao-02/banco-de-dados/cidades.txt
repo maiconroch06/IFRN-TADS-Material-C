@@ -1,4 +1,4 @@
-17 = quant-cidades
+17
 
 Boa-Saude
 Bom-Jesus

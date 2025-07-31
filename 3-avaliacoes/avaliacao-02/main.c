@@ -1,16 +1,9 @@
-/*
+#include <stdio.h>
+#include "prototipo.h"
 
-Interface 1: MENU
+int main(void){
 
-========= ROTAS-AQUI-PERTO =========
-> [1] Cadastrar cidades
-> [2] Exibir cidades cadastradas -
-> [3]
+    exibicao();
 
-
-========= ROTAS-AQUI-PERTO =========
-> Nome cidade:
-> Distancia:
-> 
-
-*/
+    return 0;
+}
