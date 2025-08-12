@@ -1,14 +1,13 @@
 #include <stdio.h>
-
+// Faça um progrma em C que pegue dois numeros do usuario e faça as 4 operações basicas matematicas e as exiba.
 int main(void) {
-    int num1, num2,soma,sub,mult,div;
+    int num1,num2,soma,sub,mult,div;
 
-    printf("\n====================================================================\n\n");
-    printf("- - - - - - - - - - - - Calcule dois numeros - - - - - - - - - - - -\n\n");
-    printf(" -> Digite o primeiro numero: ");
+    printf("\n ==================== CALCUALNDO NUMEROS ====================");
+    printf("\n -> Primeiro numero: ");
     scanf("%i",&num1);
-
-    printf("\n -> Digite o segundo numero: ");
+    
+    printf(" -> Segundo numero: ");
     scanf("%i",&num2);
  
     soma = num1 + num2;
@@ -16,20 +15,13 @@ int main(void) {
     mult = num1 * num2;
     div = num1 / num2;
 
-    printf("\n     # As operacoes eh:"); 
-    printf("\n--------------------------------------------------------------------\n");
+    printf("\n ----------------------- RESULTADOS -------------------------");
+    printf("\n                  Soma      ==> %i + %i = %i",num1, num2, soma);
+    printf("\n                Subtracao   ==> %i - %i = %i",num1, num2, sub);
+    printf("\n              Multiplicacao ==> %i * %i = %i",num1, num2, mult);
+    printf("\n                 Divisao    ==> %i / %i = %i",num1, num2, div);
+    printf("\n ------------------------------------------------------------");
 
-    printf("                         ==> %i + %i = %i <==\n\n",num1, num2, soma);
-
-    printf("                         ==> %i - %i = %i <==\n\n",num1, num2, sub);
-
-    printf("                         ==> %i * %i = %i <==\n\n",num1, num2, mult);
-
-    printf("                         ==> %i / %i = %i <==\n",num1, num2, div);
-
-    printf("--------------------------------------------------------------------");
-
-    printf("\n====================================================================");
     return 0;
 }
 
