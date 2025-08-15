@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 
-int main (void) {
+int main(void) {
     int cont = 0;
         //    !=
     while (cont < 10) {

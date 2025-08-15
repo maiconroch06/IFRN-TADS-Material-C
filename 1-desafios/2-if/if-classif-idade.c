@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 
-int main(void){
+int main(void) {
     int idade;
     printf("\n\n ================ Verifique sua categoria ================\n\n");
 

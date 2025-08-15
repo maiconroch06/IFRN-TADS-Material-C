@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main(void) {
-
+int main(void){
     int n_linhas, n_colunas;
 
     printf(" -> Informe a quantidade de linhas: ");
@@ -20,12 +19,10 @@ int main(void) {
                 } else {
                     matriz[i][j] = 0;
                 }                
-                printf("%i ",matriz[i][j]);
+                printf(" %i ",matriz[i][j]);
             }
+            printf("\n");
         }
-        printf("\n");
     }
-
-
     return 0;
 }

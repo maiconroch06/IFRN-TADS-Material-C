@@ -5,7 +5,7 @@ int main(void) {
     int i = 1;
     //classificar os mais rapidos
     //declarações: dizer que o recorde mundial foi ultrapassado
-    for (i = 1; i <= 3; i++){
+    for (i = 1; i <= 3; i++) {
         printf("Nome do atleta %i: ",i);
         scanf("%s",&nome);
     }
@@ -19,8 +19,7 @@ int main(void) {
     }
     while (i <= 3);
 
-    while (i <= 3)
-    {
+    while (i <= 3) {
         printf("Nome do atleta %i: ",i++);
         scanf("%s",&nome);    
     }

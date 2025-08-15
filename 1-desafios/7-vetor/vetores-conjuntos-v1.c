@@ -11,14 +11,14 @@ int main (void) {
 
     srand(time(NULL));
 
-    // preencendo o vetor conjunto 01
-    printf("\n CONJUNTO 1: ");
+    // preencendo o vetor conjunto A
+    printf("\n CONJUNTO A: ");
     for (int i = 0; i < NCJ1; i++) {
         conjunto_01[i] = rand() % 21; // 0 a 20
         printf("%i ", conjunto_01[i]);
     }
 
-    printf("\n CONJUNTO 2: ");
+    printf("\n CONJUNTO B: ");
     for (int i = 0; i < NCJ2; i++) {
         conjunto_02[i] = rand() % 21; // 0 a 20
         printf("%i ", conjunto_02[i]);

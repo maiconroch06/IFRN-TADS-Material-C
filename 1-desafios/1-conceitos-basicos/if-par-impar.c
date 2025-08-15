@@ -4,14 +4,15 @@ int main(void) {
     int num;
     
     printf("\n ============ IMPAR OU PAR??? ============");
-    printf(" -> Informe um numero: ");
+    printf("\n -> Informe um numero: ");
     scanf("%i", &num);
-
+    
     if (num % 2 == 0) {
         printf("\n > Sim, %i e par!", num);
     } else {
         printf("\n > Nao, %i e impar!", num);
     }
+    printf("\n =========================================");
 
     return 0;
 }

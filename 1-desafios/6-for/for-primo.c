@@ -8,24 +8,29 @@ int main(void) {
     while (TRUE) {
         printf("\n = = = = = = = QUEM EH PRIMO? = = = = = = =\n");
         printf(" => Informe um numero: ");
-        scanf("%i",&num);
+        scanf("%i", &num);
 
-        int cont = 0;
-            for (int i = 1 ; i <= num; i++) {
-                if (num % i == 0) {
-                    cont++;
-                }
-            }
-            
-            if (cont == 2) {
-                printf("Eh primo");
-            } else {
-                printf("Nao eh primo");
-            }
-                   
         if (num == 0) {
             printf("\n Saindo.... ");
-            break;    
+            break;
+        }
+
+        int eh_primo = 1;
+        if (num < 2) {
+            eh_primo = 0;
+        } else {
+            for (int i = 2; i <= num / 2; i++) {
+                if (num % i == 0) {
+                    eh_primo = 0;
+                    break;
+                }
+            }
+        }
+
+        if (eh_primo) {
+            printf("Eh primo\n");
+        } else {
+            printf("Nao eh primo\n");
         }
     }
     return 0;

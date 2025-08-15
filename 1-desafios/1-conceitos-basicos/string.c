@@ -5,31 +5,18 @@ int main(void) {
     char nome1[30];
     char nome2[30];
 
-/*
-    int num1;
-
-    printf("informe um numero: ");
-    scanf("%i",&num1);
-
-    fflush(stdin); 
-*/  
-
     printf(" Informe seu nome1: ");
-    scanf(" %[^\n]",&nome1);
+    scanf(" %[ ^\n]",&nome1);
 
     printf(" Nome1: %s",nome1);
 
     fflush(stdin);
 
     printf("\n Informe seu nome2: ");
-    scanf(" %[^\n]",&nome2);
+    scanf(" %[ ^\n]",&nome2);
 
     printf("\n Nome2: %s",nome2);
-/*
-    > 0: nome1 > nome2
-    == 0: nome1 == nome2
-    < 0: mome1 < nome2
-*/
+
     int cmp = strcmp(nome1,nome2);
 
     if(cmp > 0) {

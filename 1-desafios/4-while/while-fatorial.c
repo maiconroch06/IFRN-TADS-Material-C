@@ -1,7 +1,6 @@
-//junto com LsRep1 20/05/2025 Fatorial - al
 #include <stdio.h>
 
-int main (void) {
+int main(void) {
     int n;
     int fat = 1;
     

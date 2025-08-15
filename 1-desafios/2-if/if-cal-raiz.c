@@ -1,10 +1,6 @@
-//receber um numero do usuario que imprima a raiz do numero se for +, se nao sera a potencia desse numero
-//al8 junto com ds9
-//nessa ds n passou o else if
-
 #include <stdio.h>
 #include <math.h>
-
+// Receber um numero do usuario que imprima a raiz do numero se for +, se nao sera a potencia desse numero
 int main(void) {
     double n1;
 

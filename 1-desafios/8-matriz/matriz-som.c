@@ -5,10 +5,10 @@ int main(void){
     int linhas_B, colunas_B;
 
     printf("===================== SOMA MATRIZ =====================\n");
-    printf(" -> Tamanho da matriz A: ");
+    printf(" -> Tamanho da matriz A (x y): ");
     scanf("%i %i",&linhas_A,&colunas_A);
 
-    printf(" -> Tamanho da matriz B: ");
+    printf(" -> Tamanho da matriz B (x y): ");
     scanf("%i %i",&linhas_B,&colunas_B);
 
     if (linhas_A == linhas_B && colunas_A == colunas_B){

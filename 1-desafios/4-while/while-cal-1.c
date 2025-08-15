@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main () {
+int main() {
     char op;
     float a,b,continuar;
     char aux; //para comp que n roda o fflush(stdin) e adicionar outro q chame esse aux

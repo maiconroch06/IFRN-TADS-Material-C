@@ -1,8 +1,8 @@
-#include <stdio.h> //break; ele sai da estrutura. continue; a iteração corrente eh finalizada. ele volta
-
+#include <stdio.h>
+//break; ele sai da estrutura. continue; a iteração corrente eh finalizada. ele volta
 #define TRUE 1
 
-int main () {
+int main() {
     char op;
     float a,b,continuar;
     char aux; //para comp que n roda o fflush(stdin) e adicionar outro q chame esse aux

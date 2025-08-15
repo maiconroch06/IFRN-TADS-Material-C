@@ -8,7 +8,7 @@ int main(void) {
 
     while (TRUE) {
     
-        do { // Não sabemos quanro alimentos o usuario irá querer
+        do { // Não sabemos quantos alimentos o usuario irá querer
             printf("\n---------------- MENU ------------------\n");
             printf(" 1 - Misto Quente         |  R$  5.00 \n");
             printf(" 2 - Cheese Burg          |  R$ 10.00 \n");
@@ -33,14 +33,12 @@ int main(void) {
             printf(" * Valo da conta: R$%.2f", valor_compra);
         }
 
-    printf("\n -> Fechar lanchonete 1-Sim?: ");
-    scanf("%i",&fechar);
-    if (fechar == 1) {
-        break;
-    }
-    
+        printf("\n -> Fechar lanchonete [1]Sim?: ");
+        scanf("%i",&fechar);
 
+        if (fechar == 1) {
+            break;
+        }
     }
-
     return 0;
 }

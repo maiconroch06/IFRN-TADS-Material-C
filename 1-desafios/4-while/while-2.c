@@ -1,8 +1,7 @@
-//al junto com while 2 26/05/2025 
 #include <stdio.h>
 #include <ctype.h>
 
-int main (void) {
+int main(void) {
 
     char genero; //[10] = {'H','M','h','m'};
     int altura;

@@ -1,7 +1,6 @@
-//al junto com while 2 26/05/2025 
 #include <stdio.h>
 
-int main (void) {
+int main(void) {
 
     int n = 1;
     int cont_positivo = 0;
