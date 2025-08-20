@@ -23,7 +23,7 @@ Este repositório é de uso pessoal e acadêmico para a disciplina de **Programa
   `avaliacoes/`: materiais avaliativos:
 
    - `prova/`: provas avaliativas realizadas presencialmente em sala de aula.
-   - `PROG-atividade/`: tarefas enviadas como avaliação individual externa (para casa).
+   - `PROG-atividade/`: tarefas enviadas como avaliação para casa.
 
 ## 💡 Tecnologias Utilizadas
 
@@ -48,27 +48,27 @@ Este repositório é de uso pessoal e acadêmico para a disciplina de **Programa
 - Durante a instalação, selecione a opção `mingw32-gcc-g++` e `mingw32-base`.
 - No canto superio esquerdo, acesse `Installation > Apply Changes > Apply`, após aguardar a instalação dos pacotes pode fechar o programa.
   
-<img src="image/1" align="right" width="50">
+<img src="image/1.png" align="right" width="50">
 
 - Pesquise pelo programa em seu computador chamado Variaveis, logo aparecera essas duas opções, acesse a que esta destacada.
   
-<img src="image/2" align="right" width="50">
+<img src="image/2.png" align="right" width="50">
 
 - Ao executar, aperte o botão detacado na imagem "Variáveis de Ambiente...".
 
-<img src="image/3" align="right" width="50">
+<img src="image/3.png" align="right" width="50">
 
 - Clique na varável "Path" como esta destacada em azul na imagem e aperte o botão "Editar"
 
-<img src="image/4" align="right" width="50">
+<img src="image/4.png" align="right" width="50">
 
 - Logo em seguida vá em "Procurar" e nesse momento você vai localizar uma pasta da qual instalou anteriormente que será a pasta bin. Caso não tenha alterado o local de instalação muito provavelmente estará C:MinGW/bin
   
 - Após esse procedimento aperte nos proxomos botões "Ok" para confirmar as mudanças.
 
-<img src="image/5" align="right" width="50">
+<img src="image/5.png" align="right" width="50">
 
-<img src="image/6" align="right" width="50">
+<img src="image/6.png" align="right" width="50">
 
 - Entre no VS Code 1.acesse a aba de extenções, 2. vá na barra de pesquisa e adicione "c", e procure pelas seguintes exetenções para instalar.
   
@@ -114,27 +114,10 @@ Este repositório é de uso pessoal e acadêmico para a disciplina de **Programa
   cd IFRN-TADS-Material-C
   ```
 
-4. Compilar e executar algum codigo
+### 4. Compilar e executar algum codigo
 
-Para compilar (exemplo com main.c):
-
-  ```
-  gcc main.c -o programa
-  ```
-
-Para executar:
-
-Windows:
-
-  ```
-  programa.exe
-  ```
-
-Linux/macOS:
-
-  ```
-  ./programa
-  ```
+<img src="image/7.png" align="right" width="50">
+Clique no botão para executar o codigo, ele só aparece após intalar uma extensão dita anteriormente.
 
 ## 🤝 Contribuição
 
