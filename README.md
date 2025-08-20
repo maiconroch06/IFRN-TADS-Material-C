@@ -40,70 +40,57 @@ Este repositório é de uso pessoal e acadêmico para a disciplina de **Programa
 
 ### 2. Instalar o compilador C
 
-- Nos sistemas operacionais do Linux e macOS já vem instalado o complidador da linguagem, mas de qualquer forma execute os passos a seguir.
+- Nos sistemas operacionais do Linux e macOS já vem instalado o compidador da linguagem, mas de qualquer forma execute os passos a seguir.
 
 #### Windows (MinGW)
-- Baixe o compilado C: [Como Programar em C usando o Visual Studio Code? - YouTube](https://sourceforge.net/projects/mingw/files/MinGW/Base/gcc/Version6/gcc-6.3.0/)
-- Video de consulta sobre os proximos passos [https://youtu.be/Mook-z2uvpM?si=XTP_BJy_ilbZ65Dv](https://youtu.be/Mook-z2uvpM?si=XTP_BJy_ilbZ65Dv)
-- Durante a instalação, selecione a opção `mingw32-gcc-g++` e `mingw32-base`.
-- No canto superio esquerdo, acesse `Installation > Apply Changes > Apply`, após aguardar a instalação dos pacotes pode fechar o programa.
+
+##### Baixar e instalar
+
+1. Baixe o compilador C: [**Download MinGW** - sourceforge.net/](https://sourceforge.net/projects/mingw/files/MinGW/Base/gcc/Version6/gcc-6.3.0/)
+- obs: video de consulta sobre os proximos passos [**Como Programar em C usando o Visual Studio Code?** - YouTube](https://youtu.be/Mook-z2uvpM?si=XTP_BJy_ilbZ65Dv)
+2. Durante a instalação, selecione:
+   - `mingw32-gcc-g++`
+   - `mingw32-base`
+3. Clique em:  
+   `Installation > Apply Changes > Apply`
+
+##### Configurar variáveis de ambiente
+
+###### Abrir variáveis de ambiente
+
+- Pesquise no Windows: **Variáveis de Ambiente**
+<img src="imagem/1.png" width="500">
+
+- Clique em **Variáveis de ambiente...**
+<img src="imagem/2.png" width="500">
+
+###### Editar Path
+
+1. Em Variáveis de Ambiente, selecione a variável **Path** e clique em **Editar**
+<img src="imagem/3.png" width="500">
+
+2. Clique em **Procurar** e selecione a pasta `bin` do MinGW  
+   Normalmente: `C:\MinGW\bin`
+<img src="imagem/4.png" width="500">
   
-<img src="image/1.png" align="center" width="200">
+###### Finalizar
 
-- Pesquise pelo programa em seu computador chamado Variaveis, logo aparecera essas duas opções, acesse a que esta destacada.
+- Clique em **OK** em todas as janelas para salvar
+
+✅ Pronto, MinGW está configurado.
+---
+
+### 3. Configurando o Visual Studio Code
+
+  Entre no Visual Studio Code
+  1. Acesse a aba de extensões;
+  2. Vá na barra de pesquisa e pesquise por **C**;
+  3. Procure pelas seguintes exetenções para instalar
   
-<img src="image/2.png" align="center" width="200">
+<img src="imagem/5.png" width="500"> <img src="imagem/6.png" width="300">
 
-- Ao executar, aperte o botão detacado na imagem "Variáveis de Ambiente...".
-
-<img src="image/3.png" align="center" width="200">
-
-- Clique na varável "Path" como esta destacada em azul na imagem e aperte o botão "Editar"
-
-<img src="image/4.png" align="center" width="200">
-
-- Logo em seguida vá em "Procurar" e nesse momento você vai localizar uma pasta da qual instalou anteriormente que será a pasta bin. Caso não tenha alterado o local de instalação muito provavelmente estará C:MinGW/bin
-  
-- Após esse procedimento aperte nos proxomos botões "Ok" para confirmar as mudanças.
-
-<img src="image/5.png" align="center" width="200">
-
-<img src="image/6.png" align="center" width="200">
-
-- Entre no VS Code 1.acesse a aba de extenções, 2. vá na barra de pesquisa e adicione "c", e procure pelas seguintes exetenções para instalar.
-  
-- (Opcional) Para verificar se funcionou, abra o **Prompt de Comando** e digite:
-  
-  ```bash
-  gcc --version
-  ```
-#### Linux
-- No terminal, execute:
-  
-   ```
-  sudo apt update
-  sudo apt install build-essential -y
-  ```
-   
-- Verifique:
-
-  ```
-  gcc --version
-  ```
-
-#### macOS
-
-- No terminal, instale as ferramentas de desenvolvimento da Apple:
-
-  ```
-  xcode-select --install
-  ```
-
-- Verifique:
-  
-  ```
-  gcc --version
-  ```
+✅ Pronto, Visual Studio Code está configurado.
+---
 
 ### 3. Clonar este repositório
 
@@ -116,8 +103,8 @@ Este repositório é de uso pessoal e acadêmico para a disciplina de **Programa
 
 ### 4. Compilar e executar algum codigo
 
-<img src="image/7.png" align="center" width="200">
-Clique no botão para executar o codigo, ele só aparece após intalar uma extensão dita anteriormente.
+Clique no botão para executar o codigo, ele só aparece após instalar uma extensão dita anteriormente.
+<img src="imagem/7.png" width="400">
 
 ## 🤝 Contribuição
 
@@ -125,5 +112,5 @@ Contribuições são bem-vindas! Se quiser sugerir melhorias, correções ou adi
 
 ## 👨‍💻 Autor
 
-Este repositório foi criado por [Maicon_Rocha](https://github.com/maiconroch06) como parte do curso de **Analise e desenvolvimento de Sistemas** **(TADS)** no **IFRN - Campus Nova Cruz**.
-<img src="image/happy-cat.gif" align="right" width="50">
+Este repositório foi criado por [Maicon_Rocha](https://github.com/maiconroch06) como parte do curso de **Análise e Desenvolvimento de Sistemas** **(TADS)** no **IFRN - Campus Nova Cruz**.
+<img src="imagem/happy-cat.gif" align="right" width="50">
