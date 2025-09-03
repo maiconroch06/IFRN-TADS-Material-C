@@ -13,16 +13,3 @@ int main(void) {
 
     return 0;
 }
-/* outras questoes: 
-
-11.Imprima os 15 primeiros números da sequência de Fibonacci.
-
-16.Imprima todos os números palíndromos entre 100 e 999 (ex: 121, 191, 212...).
-
-17.Leia um número binário (ex: 1011) e converta para decimal usando for.
-
-18.Imprima todos os números entre 1 e 1000 que são múltiplos de 3 e a soma de seus dígitos também é múltiplo de 3.
-
-//Gere todos os pares (i, j) onde 1 ≤ i < j ≤ n e a soma i + j seja um número primo.
-
-*/
